@@ -99,3 +99,17 @@ body {
     text-decoration: underline; /* Optional: Underline link on hover */
 }
 
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .links {
+        margin-top: 10px;
+        margin-right: 0; /* Removes right margin on smaller screens */
+    }
+    .links a {
+        margin: 5px;
+    }
+}
