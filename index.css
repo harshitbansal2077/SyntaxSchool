@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252525;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    overflow-x: hidden; /* Prevents horizontal overflow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header {
+    margin-left: 10px;
+    flex: 1; /* Allows header to take up remaining space */
+}
+
+.links {
+    display: flex;
+    align-items: center; /* Aligns links vertically in the center */
+    margin-right: 20px; /* Adds space between links and search bar */
+}
+
+.links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px; /* Adjust as needed */
+    padding: 8px 12px; /* Adjust as needed */
+    font-size: 21px;
+}
+
+.links a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+code {
+    display: block;
+    background-color: #333;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+}
+
+.content {
+    padding: 10px 20px;
+    margin-top: 9%;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .links {
+        margin-top: 10px;
+        margin-right: 0; /* Removes right margin on smaller screens */
+    }
+    .links a {
+        margin: 5px;
+    }
+}
+
+.footer {
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 50px; /* Adds space between elements */
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    padding-left: 5px; /* Adds some space between the text and the link */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Optional: Underline link on hover */
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 200px; /* Adjust width as needed */
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
