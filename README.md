@@ -1,0 +1,2 @@
+# SyntaxSchool
+ My Coding Website
