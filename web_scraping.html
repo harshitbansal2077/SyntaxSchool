@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping with Python - SyntaxSchool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <h1>Web Scraping with Python</h1>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="python.html">Python</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>This tutorial introduces web scraping using Python.</p>
+        <h2>Using Requests and BeautifulSoup</h2>
+        <p>Install the required libraries:</p>
+        <code>
+            pip install requests beautifulsoup4
+        </code>
+        <h2>Basic Scraping Example</h2>
+        <p>Here’s how to scrape a website:</p>
+        <code>
+            import requests<br>
+            from bs4 import BeautifulSoup<br><br>
+            response = requests.get("https://example.com")<br>
+            soup = BeautifulSoup(response.text, "html.parser")<br>
+            print(soup.title.text)
+        </code>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 • SyntaxSchool</p>
+        <a href="#">Contact</a>
+    </div>
+</body>
+</html>
+    

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Decorators - SyntaxSchool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <h1>Understanding Decorators</h1>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="python.html">Python</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>This tutorial explains how decorators work in Python.</p>
+        <h2>Defining a Decorator</h2>
+        <p>A decorator is a function that wraps another function:</p>
+        <code>
+            def my_decorator(func):<br>
+                def wrapper():<br>
+                    print("Something is happening before the function is called.")<br>
+                    func()<br>
+                    print("Something is happening after the function is called.")<br>
+                return wrapper
+        </code>
+        <h2>Using a Decorator</h2>
+        <p>You can use a decorator with the <code>@</code> symbol:</p>
+        <code>
+            @my_decorator<br>
+            def say_hello():<br>
+                print("Hello!")
+        </code>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 • SyntaxSchool</p>
+        <a href="#">Contact</a>
+    </div>
+</body>
+</html>
